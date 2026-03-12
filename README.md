@@ -15,7 +15,7 @@
 |03  | Css        |Look & Fell - Cascading Style Sheets  |
 |04  | Javascript |Behavior - Programing Language        |
 
-![OFAC](https://adso3314566.vercel.app/imgs/photo.webp)
+![OFAC](https://adso3314566.vercel.app/src/imgs/photo.webp)
 
 [ADSO Files DRIVE](https://tinyurl.com/wnkk334u)
 
