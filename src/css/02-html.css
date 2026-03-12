@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+body {
+    background-color: #E24c26;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23c54221' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23a8391c' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%238c2f18' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%236f2613' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23521C0E' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    color: #fff;
+    font-family: Poppins;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+    a.btn-home {
+        border: 2px solid white;
+        border-radius: 50%;
+        position: fixed;
+        display: flex;
+        width: 32px;
+        height: 32px;
+        transform: scale(.8);
+        opacity: .4;
+        padding: 0.4rem;
+        inset: 0.4rem;
+        transition: all 0.2s ease-in;
+        &:hover {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+    main {
+        h1 {
+            font-size: 2.8rem;
+            text-align: center;
+            margin: 0;
+        }
+        img {
+            border: 6px solid #fff;
+            border-radius: 50%;
+            height: 200px;
+            display: flex;
+            margin: 1rem auto;
+            object-fit: cover;
+            width: 200px;
+        }
+        h4 {
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: 400;
+        }
+    }
+    menu {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 2rem auto;
+        gap: 0.4rem;
+        width: 340px;
+        a:link, a:visited {
+            background-color: #fff9;
+            color: #000;
+            border-radius: 12rem;
+            padding: 0.2rem;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            span {
+                background-color: #E24c26;
+                color: #fff;
+                border-radius: 50%;
+                font-size: 1.2rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 50px;
+                width: 50px;
+            }
+            h4 {
+                margin: 0;
+                text-align: left;
+                font-size: 1rem;
+                text-indent: 0.4rem;
+                width: 276px;
+            }
+            transition: transform 0.2s ease-in;
+            &:hover {
+                transform: scale(1.05) translateX(12px);
+            }
+        }
+    }
+}
