@@ -3,8 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>08-Images</title>
+    <title>13-Audio</title>
     <link rel="stylesheet" href="../src/css/02-html.css">
+    <style>
+        audio {
+            width: 100%;
+            margin-top: 2rem;
+        }
+    </style>
 </head>
 <body>
     <a class="btn-home" href="index.html">
@@ -12,14 +18,12 @@
     </a>
     <main>
         <header>
-            <h1>08-Images</h1>
-            <h2>Inserts an image.</h2>
+            <h1>13-Audio</h1>
+            <h2>Inserts audio files.</h2>
         </header>
         <section>
-            <h3>Relative path:</h3>
-            <img src="images/stark.png" alt="Stark Frieren">
-            <h3>Absolute path:</h3>
-            <img src="https://shorturl.at/ZqQYG" alt="Revolte Frieren">
+            <h3>SENA Anthem:</h3>
+            <audio src="audio/sena.mp3" autoplay controls></audio>
         </section>
     </main>
 </body>

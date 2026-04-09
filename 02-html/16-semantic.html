@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>16-Semantic</title>
+    <link rel="stylesheet" href="../src/css/02-html.css">
+    <style>
+        section.semantic main header,
+        section.semantic main header menu,
+        section.semantic main section,
+        section.semantic main section article,
+        section.semantic main section aside,
+        section.semantic main footer {
+            border: 1px solid #fff;
+            display: flex;
+            justify-content: center;
+            font-size: 2rem;
+            align-items: center;
+            width: 100%;
+        }
+        section.semantic main header {
+            flex-direction: column;
+            gap: 0;
+        }
+        section.semantic main header menu {
+            background-color: #fff3;
+            border-bottom: 0;
+            border-top: 0;
+            border-inline: 0;
+            margin-block: 0;
+        }
+        section.semantic main section {
+            background-color: #0006;
+            border: 0;
+            border-radius: 0;
+            height: 280px;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+        section.semantic main section article,
+        section.semantic main section aside {
+            height: 100%;
+        }
+        section.semantic main section article {
+            width: 70%;
+        }
+        section.semantic main section aside {
+            border-left: 1px solid transparent;
+            width: 30%;
+        }
+        section.semantic main footer {
+            background-color: #0009;
+        }
+    </style>
+</head>
+<body>
+    <a class="btn-home" href="index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" viewBox="0 0 256 256"><path d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z"></path></svg>
+    </a>
+    <main>
+        <header>
+            <h1>16-Semantic</h1>
+            <h2>Defines layout with semantic tags (new style).</h2>
+        </header>
+        <section class="semantic">
+            <main>
+                <header>
+                    <menu>Menu Header</menu>
+                </header>
+                <section>
+                    <article>Article</article>
+                    <aside>Aside</aside>
+                </section>
+                <footer>Footer</footer>
+            </main>
+        </section>
+    </main>
+</body>
+</html>

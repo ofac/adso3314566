@@ -3,8 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>08-Images</title>
+    <title>14-Video</title>
     <link rel="stylesheet" href="../src/css/02-html.css">
+    <style>
+        video {
+            width: 100%;
+            margin-top: 2rem;
+        }
+    </style>
 </head>
 <body>
     <a class="btn-home" href="index.html">
@@ -12,14 +18,12 @@
     </a>
     <main>
         <header>
-            <h1>08-Images</h1>
-            <h2>Inserts an image.</h2>
+            <h1>14-Video</h1>
+            <h2>Inserts video files.</h2>
         </header>
         <section>
-            <h3>Relative path:</h3>
-            <img src="images/stark.png" alt="Stark Frieren">
-            <h3>Absolute path:</h3>
-            <img src="https://shorturl.at/ZqQYG" alt="Revolte Frieren">
+            <h3>Video with poster:</h3>
+            <video src="video/html5.mp4" controls poster="images/cover.png"></video>
         </section>
     </main>
 </body>
