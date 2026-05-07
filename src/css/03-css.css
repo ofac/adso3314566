@@ -62,8 +62,8 @@ body {
         section {
             background-color: #0009;
             border-radius: 0.2rem;
-            min-width: 380px;
-            margin-top: 2rem;
+            width: 380px;
+            margin: 2rem auto;
             padding: 1rem;
             h3 {
                 border-bottom: 2px dotted #fff;

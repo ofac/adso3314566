@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20-Pseudo Classes</title>
+    <link rel="stylesheet" href="../src/css/03-css.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+        main div.options {
+            margin-block: 1rem;
+        }
+        /*
+        div.options a:link,
+        div.options a:visited
+        */
+        div.options a:is(:link, :visited) {
+            background-color: #0009;
+            color: #fff9;
+            padding: 0.4rem 0.6rem;
+            text-decoration: none;
+        }
+        /* 
+        div.options a:hover
+        */
+        div.options a:is(:hover) {
+            background-color: #000;
+            color: #fff;
+        }
+        /*
+        div.options a:active
+        */
+        div.options a:is(:active) {
+            background: #a00;
+        }
+        /* 
+            div.options a:first-child,
+            div.options a:last-child  
+        */
+        div.options a:is(:first-child, :last-child) {
+            background-color: #8c3fe5;
+        }
+        input {
+            margin-block: 0.4rem;
+            padding: 0.4rem 0.8rem;
+            outline: none;
+        }
+        /* input:focus */
+        input:is(:focus) {
+            border-bottom: 4px solid #92e53f;
+        }
+        p.paragraph:first-line {
+            color: #fff;
+            background-color: #8c3fe566;
+        }
+        p.paragraph:first-letter {
+            font-family: Sacramento;
+            font-size: 4rem;
+        }
+        div.heart {
+            background-color: transparent;
+            position: relative;
+            margin-top: 4rem;
+            height: 100px;
+            width: 50px;
+        }
+        div.heart::before {
+            background-color: #8c3fe5;
+            border-radius: 25px 25px 0 0;
+            position: absolute;
+            content: "";
+            height: 80px;
+            width: 50px;
+            transform-origin: center;
+            transform: rotate(-45deg) translateX(20px);
+            left: 170px;
+            top: 0;
+        }
+        div.heart::after {
+            background-color: #8c3fe5;
+            border-radius: 25px 25px 0 0;
+            position: absolute;
+            content: "";
+            height: 80px;
+            width: 50px;
+            transform-origin: center;
+            transform: rotate(45deg) translateX(-20px);
+            left: 220px;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <a class="btn-home" href="index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" viewBox="0 0 256 256"><path d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z"></path></svg>
+    </a>
+    <main>
+        <header>
+            <h1>20-Pseudo Classes</h1>
+            <h2>Is used to define a special state of an element.</h2>
+        </header>
+        <section>
+            <h3>:link|:hover|:active|:visited</h3>
+            <h4>:first-child|:last-child</h4>
+            <div class="options">
+                <a href="#">Option 1</a>
+                <a href="#">Option 2</a>
+                <a href="#">Option 3</a>
+                <a href="#">Option 4</a>
+            </div>
+            <h3>:focus</h3>
+            <input type="text" placeholder="Enter your First Name">
+            <br>
+            <input type="text" placeholder="Enter your Last Name">
+            <h3>:first-letter|:first-line</h3>
+            <p class="paragraph">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam est fugit omnis.
+            </p>
+            <h3>:before|:after</h3>
+            <div class="heart"></div>
+        </section>
+    </main>
+</body>
+</html>
