@@ -18,6 +18,18 @@
         div#sprite.sp4 { background-position: calc(-256px * 3) 0; }
         div#sprite.sp5 { background-position: calc(-256px * 4) 0; }
         div#sprite.sp6 { background-position: calc(-256px * 5) 0; }
+        div#dino {
+            background: url(imgs/dino-sprite.png) no-repeat;
+            height: 128px;
+            margin: 2rem auto;
+            width: 128px;
+        }
+        div#dino.sp1 { background-position: calc(-128px * 0) 0; }
+        div#dino.sp2 { background-position: calc(-128px * 1) 0; }
+        div#dino.sp3 { background-position: calc(-128px * 2) 0; }
+        div#dino.sp4 { background-position: calc(-128px * 3) 0; }
+        div#dino.sp5 { background-position: calc(-128px * 4) 0; }
+
     </style>
 </head>
 <body>
@@ -30,8 +42,31 @@
             <h2>An image sprite is a collection of images put into a single image.</h2>
         </header>
         <section>
+            <h3>Runner:</h3>
             <div id="sprite" class="sp1"></div>
+            <h3>Dino:</h3>
+            <div id="dino" class="sp1"></div>
         </section>
     </main>
+    <script>
+        const sprite     = document.getElementById('sprite')
+        const dino       = document.getElementById('dino')
+        const numSprite  = 6
+        const dinoSprite = 2
+        let   count      = 1
+        let   countDino  = 1
+        setInterval(() => {
+            sprite.className = '' 
+            sprite.classList.add('sp'+count) 
+            if(count == numSprite) count=1
+            else count++
+        }, 80)
+        setInterval(() => {
+            dino.className = '' 
+            dino.classList.add('sp'+countDino) 
+            if(countDino == dinoSprite) countDino=1
+            else countDino++
+        }, 80)
+    </script>
 </body>
 </html>
