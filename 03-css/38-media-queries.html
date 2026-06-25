@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>38-Media Queries</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+        
+        * {
+            transition: all 0.5s ease-in;
+        }
+
+        body {
+            font-family: Poppins;
+            background-color: #013571;
+            color: #fff;
+            main {
+                padding: 4rem;
+                header {
+                    figure.logo {
+                        background: url(imgs/pepsi01.png) no-repeat center;
+                        height: 354px;
+                        margin: 0 auto;
+                        width: 919px;
+                    }
+                }
+                section {
+                    h1 {
+                        text-align: center;
+                        font-size: 2.8rem;
+                        span.md, span.sm {
+                            display: none;
+                        }
+                    }
+                    p {
+                        margin-block: 4rem;
+                        text-align: justify;
+                        line-height: 2rem;
+                    }
+                }
+            }
+        }
+        /* Break Points */
+        @media (max-width: 1024px) {
+            body main {
+                header {
+                    figure.logo {
+                        background: url(imgs/pepsi02.png) no-repeat center;
+                        height: 370px;
+                        width: 348px;
+                    }
+                }
+                section {
+                    h1 {
+                        font-size: 2rem;
+                        span.lg, span.sm {
+                            display: none;
+                        }
+                        span.md {
+                            display: inline;
+                        }
+                    }
+                }
+            }
+        }
+        @media (max-width: 780px) {
+            body main {
+                header {
+                    figure.logo {
+                        background: url(imgs/pepsi03.png) no-repeat center;
+                        height: 156px;
+                        width: 162px;
+                    }
+                }
+                section {
+                    h1 {
+                        font-size: 1.2rem;
+                        span.lg, span.md {
+                            display: none;
+                        }
+                        span.sm {
+                            display: inline;
+                        }
+                    }
+                }
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <figure class="logo"></figure>
+        </header>
+        <section>
+            <h1>
+                Media Queries:
+                <span class="lg"> (> 1024px)  🖥️ Desktop </span>
+                <span class="md"> (< 1024px) 💻 Tablet </span>
+                <span class="sm"> (< 780px) 📱 Mobile </span>
+            </h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, architecto itaque commodi voluptatibus corporis facilis asperiores deserunt, cupiditate ut error voluptas, illum perspiciatis. Soluta consectetur iusto, aperiam magnam earum doloribus recusandae perspiciatis consequatur beatae repellendus dolores fugit quos asperiores, doloremque perferendis nulla eius officia ipsam facilis temporibus repellat dicta esse? Reprehenderit minus quia impedit laboriosam iusto culpa animi voluptas id alias, repudiandae similique doloremque quod fugit dicta vitae dignissimos molestias illo omnis eum labore! Consectetur, ex magnam perferendis quae, hic debitis est quibusdam eligendi minima consequuntur aliquam ratione autem accusantium id voluptatibus, illum libero commodi exercitationem? Sunt, nulla amet! Esse qui architecto ex ea cum minima sint autem quia? Magni minus repellendus corrupti sed dolore saepe provident praesentium esse similique?
+            </p>
+        </section>
+    </main>
+</body>
+</html>
